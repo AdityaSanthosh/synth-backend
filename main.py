@@ -44,7 +44,6 @@ async def putData(file: UploadFile = File()):
     data, count = supabase.table('pageContent').insert(
         {"user_id": 1, "page-content": my_array, "created_at": json.dumps(datetime.datetime.now(), cls=DatetimeEncoder)
             , "tab_id": "1"}).execute()
-    # remove unnecessary symbols from text
     return {"file_size": "len(file)"}
 
 

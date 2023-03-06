@@ -3,3 +3,5 @@ uvicorn[standard]
 supabase
 lxml
 beautifulsoup4
+python-multipart
+lxml
